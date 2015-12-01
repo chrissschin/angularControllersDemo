@@ -1,0 +1,8 @@
+<h2>{{app.messageHome}}</h2>
+
+<input type="text" ng-model="app.changed">
+<button ng-click="app.handleMessage(app.changed)">Handle</button>
+
+<input type="text" ng-model="user">
+
+<a ng-href="#/about/{{user}}">About Page</a>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="controllerApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Controller Demo</title>
+</head>
+<body ng-controller="mainCtrl as app">
+  
+  <h1>{{app.messageMain}}</h1>
+
+  <!-- views get brought in here -->
+  <div ng-view></div>
+
+  <!-- Vendors -->
+  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="node_modules/angular-route/angular-route.min.js"></script>
+
+  <!-- Local Scripts -->
+  <script src="app.js"></script>
+  <script src="controllers/main.controller.js"></script>
+  <script src="controllers/home.controller.js"></script>
+  <script src="controllers/about.controller.js"></script>
+
+</body>
+</html>
