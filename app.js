@@ -20,7 +20,7 @@ angular.module('controllerApp', ['ngRoute'])
     })
     .when('/home', {
       templateUrl: 'views/home.html',
-      // controller: 'homeCtrl as home'
+      controller: 'homeCtrl as home'
     })
     .otherwise({
         redirectTo : '/'
