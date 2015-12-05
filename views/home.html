@@ -1,9 +1,22 @@
 <h2>{{home.message}}</h2>
 
-<input type="text" ng-model="home.changed">
-<button ng-click="home.handleMessage(home.changed)">Handle</button>
+<form name="home.mainForm">
+  <input type="text" ng-model="home.changed" placeholder="changed" name="changed">
+  <input type="text" ng-model="home.cool" placeholder="cool" name="cool">
+  <input type="text" ng-model="home.yea" placeholder="yea" name="yea">
+  <input type="text" ng-model="home.awesome" placeholder="awesome" name="awesome">
+  <button ng-click="home.madLib()">MadLib</button>
+</form>
 
 <!-- <input type="text" ng-model="user"> -->
 <!-- routeParams for /{{user}} route -->
+<section ng-show="home.madLibForm">
+  <h2>Mad Lib Finished</h2>
+  <p>Hello everyone when the {{home.changed}} and the awesome {{home.awesome}}.</p>
+  <p>Cool this guys was {{home.cool}} and he said {{home.yea}}</p>
+
+  <button ng-click="home.madReset()">Reset</button>
+</section>
+
 
 <a ng-href="#/about">About Page</a>

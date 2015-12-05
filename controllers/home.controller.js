@@ -6,6 +6,29 @@ angular.module('controllerApp')
   var self = this;
   this.message = "Hello Home Page";
   this.changed = "";
+  this.cool = "";
+  this.yea = "";
+  this.awesome = "";
+
+  this.madLibForm = false;
+
+  this.madLib = function() {
+    self.madLibForm = true;
+  }
+
+  this.madReset = function() {
+    // empty the models
+    self.changed = "";
+    self.cool = "";
+    self.yea = "";
+    self.awesome = "";
+
+    // hide the madlib 
+    self.madLibForm = false;
+
+    // finally clean the form
+    self.mainForm.$setPristine();
+  }
 
   console.log(API.github + "users")
 
