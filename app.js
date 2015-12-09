@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('controllerApp', ['ngRoute'])
+angular.module('controllerApp', ['ngRoute', 'ngAnimate'])
 
 .constant('API', {
   github: "http://api.github.com/",
