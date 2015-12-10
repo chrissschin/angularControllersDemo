@@ -10,10 +10,10 @@ angular.module('controllerApp')
   this.yea = "";
   this.awesome = "";
 
-  this.madLibForm = false;
+  this.madLibForm = true;
 
   this.madLib = function() {
-    self.madLibForm = true;
+    self.madLibForm = false;
   }
 
   this.madReset = function() {
@@ -23,8 +23,8 @@ angular.module('controllerApp')
     self.yea = "";
     self.awesome = "";
 
-    // hide the madlib 
-    self.madLibForm = false;
+    // hide the madlib
+    self.madLibForm = true;
 
     // finally clean the form
     self.mainForm.$setPristine();
